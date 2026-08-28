@@ -1,0 +1,79 @@
+﻿@model Dictionary<string, string>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-3 footer_col">
+                <div class="footer_about">
+                    <div class="logo_container">
+                        <a href="~/#">
+                            <div class="logo_content d-flex flex-row align-items-end justify-content-start">
+                                <div class="logo_img"><img src="images/@Model["Logo"]" alt=""></div>
+                                <div class="logo_text">@Model["LogoText"]</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="footer_about_text">
+                        <p>@Model["FooterDesc"]</p>
+                    </div>
+                    <div class="footer_social">
+                        <ul>
+                            <li><a href="~/#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="~/#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                            <li><a href="~/#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="~/#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="copyright">
+                        Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="~/https://colorlib.com/" target="_blank">Colorlib</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 footer_col">
+                <div class="footer_links">
+                    <div class="footer_title">Quick menu</div>
+                    <ul class="footer_list">
+                        <li><a href="~/index-2.html">Home</a></li>
+                        <li><a href="~/about.html">About us</a></li>
+                        <li><a href="~/#">Testimonials</a></li>
+                        <li><a href="~/#">Services</a></li>
+                        <li><a href="~/contact.html">Contact</a></li>
+                        <li><a href="~/#">Facts</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 footer_col">
+                <div class="footer_links">
+                    <div class="footer_title">Useful Links</div>
+                    <ul class="footer_list">
+                        <li><a href="~/courses.html">Courses</a></li>
+                        <li><a href="~/#">Events</a></li>
+                        <li><a href="~/news.html">News</a></li>
+                        <li><a href="~/#">Teachers</a></li>
+                        <li><a href="~/#">Links</a></li>
+                        <li><a href="~/#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 footer_col">
+                <div class="footer_contact">
+                    <div class="footer_title">Contact Us</div>
+                    <div class="footer_contact_info">
+                        <div class="footer_contact_item">
+                            <div class="footer_contact_title">Address:</div>
+                            <div class="footer_contact_line">@Model["Address"]</div>
+                        </div>
+                        <div class="footer_contact_item">
+                            <div class="footer_contact_title">Phone:</div>
+                            <div class="footer_contact_line">@Model["Phone"]</div>
+                        </div>
+                        <div class="footer_contact_item">
+                            <div class="footer_contact_title">Email:</div>
+                            <div class="footer_contact_line"><a href="~/https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4c3523393e212d25200c2b212d2520622f2321">@Model["Email"]</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

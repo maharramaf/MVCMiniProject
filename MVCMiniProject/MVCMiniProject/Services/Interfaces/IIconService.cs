@@ -4,6 +4,6 @@ namespace MVCMiniProject.Services.Interfaces
 {
     public interface IIconService
     {
-        Task<IEnumerable<IconUIVM>> GetAllAsync();
+        Task<IEnumerable<IconUIVM>> GetAllUIAsync();
     }
 }

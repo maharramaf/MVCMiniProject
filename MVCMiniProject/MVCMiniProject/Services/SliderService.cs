@@ -15,7 +15,7 @@ namespace MVCMiniProject.Services
         {
             _context = context;
         }
-        public async Task<IEnumerable<SliderUIVM>> GetAllAsync()
+        public async Task<IEnumerable<SliderUIVM>> GetAllUIAsync()
         {
             {
                 IEnumerable<SliderUIVM> sliders = await _context.Sliders.Select(m => new SliderUIVM

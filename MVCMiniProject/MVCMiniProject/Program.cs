@@ -14,6 +14,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddScoped<IIconService, IconService>();
 builder.Services.AddScoped<ISliderService , SliderService>();
+builder.Services.AddScoped<ISettingService, SettingService>();
+builder.Services.AddScoped<IEventService, EventService>();
 
 var app = builder.Build();
 

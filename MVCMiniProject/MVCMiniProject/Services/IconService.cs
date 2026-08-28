@@ -14,7 +14,7 @@ namespace MVCMiniProject.Services
             _context = context;
         }
 
-        public async Task<IEnumerable<IconUIVM>> GetAllAsync()
+        public async Task<IEnumerable<IconUIVM>> GetAllUIAsync()
         {
             {
                 IEnumerable<IconUIVM> brands = await _context.Icons.Select(m => new IconUIVM

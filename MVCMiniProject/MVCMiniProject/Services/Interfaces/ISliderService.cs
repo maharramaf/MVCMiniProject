@@ -5,6 +5,6 @@ namespace MVCMiniProject.Services.Interfaces
 {
     public interface  ISliderService
     {
-        Task<IEnumerable<SliderUIVM>> GetAllAsync();
+        Task<IEnumerable<SliderUIVM>> GetAllUIAsync();
     }
 }
