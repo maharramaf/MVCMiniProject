@@ -1,4 +1,5 @@
-﻿using MVCMiniProject.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using MVCMiniProject.Data;
 using MVCMiniProject.Services.Interfaces;
 using MVCMiniProject.ViewModels.News;
 
@@ -13,9 +14,16 @@ namespace MVCMiniProject.Services
             _context = context;
         }
 
-        public Task<IEnumerable<NewsUIVM>> GetAllUIAsync()
+        public async Task<IEnumerable<NewsUIVM>> GetAllUIAsync()
         {
-            throw new NotImplementedException();
+            IEnumerable<NewsUIVM> news = await _context.News.Include(m => m.Author).Select(a => new NewsUIVM
+            {
+                Date = a.Date,
+                Description = a.Description,
+                Image = a.Image,
+                AuthorName = a.Author.FullName
+            }).ToListAsync();
+              return news;
         }
     }
 }

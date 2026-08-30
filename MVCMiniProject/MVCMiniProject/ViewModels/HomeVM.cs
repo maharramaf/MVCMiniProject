@@ -1,6 +1,8 @@
 ﻿using MVCMiniProject.ViewModels.Events;
 using MVCMiniProject.ViewModels.Icons;
+using MVCMiniProject.ViewModels.News;
 using MVCMiniProject.ViewModels.Sliders;
+using MVCMiniProject.ViewModels.Videos;
 
 namespace MVCMiniProject.ViewModels
 {
@@ -10,5 +12,8 @@ namespace MVCMiniProject.ViewModels
         public  IEnumerable<SliderUIVM> Slider  { get; set; }
         public  Dictionary<string , string > Settings { get; set; }
         public IEnumerable<EventUIVM> Events { get; set; }
+
+        public IEnumerable<NewsUIVM> News { get; set; }
+        public VideoUIVM  Video{ get; set; }
     }
 }
