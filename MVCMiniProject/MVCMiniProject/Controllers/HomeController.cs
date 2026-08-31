@@ -12,13 +12,15 @@ namespace MVCMiniProject.Controllers
         private readonly IEventService _eventService;
         private readonly INewsService _newsService;
         private readonly IVideoService _videoService;
+        private readonly ICourseService _courseService;
 
         public HomeController(IIconService iconService,
                               ISliderService sliderService,
                               ISettingService settingService,
                               IEventService eventService,
                               INewsService newsService,
-                              IVideoService videoService)
+                              IVideoService videoService,
+                              ICourseService courseService)
         {
             _iconService = iconService;
             _sliderService = sliderService;
@@ -26,6 +28,7 @@ namespace MVCMiniProject.Controllers
             _eventService = eventService;
             _newsService = newsService;
             _videoService = videoService;
+            _courseService = courseService;
         }
 
         public async Task<IActionResult> Index()
@@ -36,6 +39,7 @@ namespace MVCMiniProject.Controllers
             var evenets = await _eventService.GetAllUIAsync();
             var news = await _newsService.GetAllUIAsync();
             var videos = await _videoService.GetAllUIAsync();
+            var courses = await _courseService.GetAllUIAsync();
 
             return View(new HomeVM
             {
@@ -44,7 +48,8 @@ namespace MVCMiniProject.Controllers
                 Settings = settings,
                 Events = evenets,
                 News = news,
-                Video = videos
+                Video = videos,
+                CourseInfos = courses
                 
              });
         }

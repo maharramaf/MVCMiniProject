@@ -1,4 +1,5 @@
-﻿using MVCMiniProject.ViewModels.Events;
+﻿using MVCMiniProject.ViewModels.Courses;
+using MVCMiniProject.ViewModels.Events;
 using MVCMiniProject.ViewModels.Icons;
 using MVCMiniProject.ViewModels.News;
 using MVCMiniProject.ViewModels.Sliders;
@@ -15,5 +16,6 @@ namespace MVCMiniProject.ViewModels
 
         public IEnumerable<NewsUIVM> News { get; set; }
         public VideoUIVM  Video{ get; set; }
+        public IEnumerable<CourseInfoUIVM> CourseInfos { get; set; }
     }
 }

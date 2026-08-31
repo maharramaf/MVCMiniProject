@@ -1,24 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|c:\\users\\meherrem\\onedrive\\desktop\\mvcminiproject\\mvcminiproject\\mvcminiproject\\models\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|solutionrelative:mvcminiproject\\models\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|c:\\users\\meherrem\\onedrive\\desktop\\mvcminiproject\\mvcminiproject\\mvcminiproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|solutionrelative:mvcminiproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|c:\\users\\meherrem\\onedrive\\desktop\\mvcminiproject\\mvcminiproject\\mvcminiproject\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|solutionrelative:mvcminiproject\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|c:\\users\\meherrem\\onedrive\\desktop\\mvcminiproject\\mvcminiproject\\mvcminiproject\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|solutionrelative:mvcminiproject\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -26,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,58 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "News.cs",
-              "DocumentMoniker": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Models\\News.cs",
-              "RelativeDocumentMoniker": "MVCMiniProject\\Models\\News.cs",
-              "ToolTip": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Models\\News.cs",
-              "RelativeToolTip": "MVCMiniProject\\Models\\News.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-30T13:32:06.281Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "MVCMiniProject\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "MVCMiniProject\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAD0BAAAAAAAAAAAAAD8BAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-30T13:05:31.611Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "MVCMiniProject\\Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "MVCMiniProject\\Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-30T13:05:29.059Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "MVCMiniProject\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "MVCMiniProject\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-30T13:05:27.979Z",
-              "EditorCaption": ""
             }
           ]
         }
