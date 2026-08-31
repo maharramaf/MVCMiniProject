@@ -1,0 +1,86 @@
+﻿
+@model EventAndNewsVM
+
+<div class="grouped_sections">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-4 grouped_col">
+                <div class="grouped_title">Why Choose Us?</div>
+                <div class="accordions">
+                    <div class="accordion_container">
+                        <div class="accordion d-flex flex-row align-items-center active"><div>Mauris vehicula nisi congue?</div></div>
+                        <div class="accordion_panel">
+                            <div>
+                                <p>Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion_container">
+                        <div class="accordion d-flex flex-row align-items-center"><div>Vehicula nisi congue, blandit?</div></div>
+                        <div class="accordion_panel">
+                            <div>
+                                <p>Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion_container">
+                        <div class="accordion d-flex flex-row align-items-center"><div>Mauris vehicula nisi congue?</div></div>
+                        <div class="accordion_panel">
+                            <div>
+                                <p>Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion_container">
+                        <div class="accordion d-flex flex-row align-items-center"><div>Nisi congue, blandit purus sed?</div></div>
+                        <div class="accordion_panel">
+                            <div>
+                                <p>Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-lg-4 grouped_col">
+                <div class="grouped_title">Upcoming Events</div>
+                <div class="events">
+                    @foreach (var item in Model.Events)
+                    {
+                        <div class="event d-flex flex-row align-items-start justify-content-start">
+                            <div>
+                                <div class="event_date d-flex flex-column align-items-center justify-content-center">
+                                    <div class="event_day">@item.Date</div>
+                                    <div class="event_month">@item.Month</div>
+                                </div>
+                            </div>
+                            <div class="event_body">
+                                <div class="event_title"><a href="#">@item.Title</a></div>
+                                <div class="event_subtitle">@item.Description</div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <div class="col-lg-4 grouped_col">
+                <div class="grouped_title">Latest News</div>
+                <div class="news">
+                    @foreach (var item in Model.News)
+                    {
+                        <div class="news_post d-flex flex-row align-items-start justify-content-start">
+                            <div><div class="news_post_image"><img src="~/images/@item.Image" alt=""></div></div>
+                            <div class="news_post_body">
+                                <div class="news_post_date">@item.Date</div>
+                                <div class="news_post_title"><a href="news.html">@item.Description</a></div>
+                                <div class="news_post_author">By <a href="#">@item.AuthorName</a></div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
