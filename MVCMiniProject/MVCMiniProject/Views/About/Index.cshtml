@@ -1,4 +1,6 @@
-﻿<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+﻿@model AboutVM
+
+<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
     <div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
     <div class="search">
         <form action="#" class="header_search_form menu_mm">
@@ -54,30 +56,31 @@
     </div>
 </div>
 
+
 <div class="about">
     <div class="container">
         <div class="row about_row row-lg-eq-height">
             <div class="col-lg-6">
                 <div class="about_content">
-                    <div class="about_title">Our Platform's main goal</div>
+                    <div class="about_title">@Model.Platform.Title</div>
                     <div class="about_text">
-                        <p>Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam. Nullam bibendum interdum dui, ac tempor lorem convallis ut. Maecenas rutrum viverra sapien sed fermentum. Morbi tempor odio eget lacus tempus pulvinar. Praesent vel nisl fermentum, gravida augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id convallis libero, sed blandit nibh. Nam ultricies tristique nibh, consequat ornare nibh. Quisque vitae odio ligula.</p>
+                        <p>@Model.Platform.Description</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="about_image"><img src="~/images/about_1.jpg" alt="https://unsplash.com/jtylernix"></div>
+                <div class="about_image"><img src="~/images/@Model.Platform.Image" alt="https://unsplash.com/jtylernix"></div>
             </div>
         </div>
         <div class="row about_row row-lg-eq-height">
             <div class="col-lg-6 order-lg-1 order-2">
-                <div class="about_image"><img src="~/images/about_1.jpg" alt=""></div>
+                <div class="about_image"><img src="~/images/@Model.Vision.Image" alt=""></div>
             </div>
             <div class="col-lg-6 order-lg-2 order-1">
                 <div class="about_content">
-                    <div class="about_title">eLearn's Vision</div>
+                    <div class="about_title">@Model.Vision.Title</div>
                     <div class="about_text">
-                        <p>Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam. Nullam bibendum interdum dui, ac tempor lorem convallis ut. Maecenas rutrum viverra sapien sed fermentum. Morbi tempor odio eget lacus tempus pulvinar. Praesent vel nisl fermentum, gravida augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id convallis libero, sed blandit nibh. Nam ultricies tristique nibh.</p>
+                        <p>@Model.Vision.Description</p>
                     </div>
                 </div>
             </div>

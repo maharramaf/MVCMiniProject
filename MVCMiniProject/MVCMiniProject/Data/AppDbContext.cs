@@ -19,6 +19,8 @@ namespace MVCMiniProject.Data
         public DbSet<CourseInfo> CourseInfos { get; set; }
         public DbSet<CourseImage> CourseImages { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
+        public DbSet<PlatformAbout> PlatformAbouts { get; set; }
+        public DbSet<VisionAbout> VisionAbouts { get; set; }
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
          
 
