@@ -1,0 +1,32 @@
+﻿
+@model PlatformAndVisionVM
+<div class="about">
+    <div class="container">
+        <div class="row about_row row-lg-eq-height">
+            <div class="col-lg-6">
+                <div class="about_content">
+                    <div class="about_title">@Model.Platform.Title</div>
+                    <div class="about_text">
+                        <p>@Model.Platform.Description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about_image"><img src="~/images/@Model.Platform.Image" alt="https://unsplash.com/jtylernix"></div>
+            </div>
+        </div>
+        <div class="row about_row row-lg-eq-height">
+            <div class="col-lg-6 order-lg-1 order-2">
+                <div class="about_image"><img src="~/images/@Model.Vision.Image" alt=""></div>
+            </div>
+            <div class="col-lg-6 order-lg-2 order-1">
+                <div class="about_content">
+                    <div class="about_title">@Model.Vision.Title</div>
+                    <div class="about_text">
+                        <p>@Model.Vision.Description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

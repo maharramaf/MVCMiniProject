@@ -1,0 +1,38 @@
+﻿
+@model IEnumerable<TeacherUIVM>
+<div class="teachers">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="teachers_title text-center">Meet the Teachers</div>
+            </div>
+        </div>
+        <div class="row teachers_row">
+            @foreach (var item in Model)
+            {
+                <div class="col-lg-4 col-md-6">
+                    <div class="teacher">
+                        <div class="teacher_image"><img src="~/images/@item.Image" alt="https://unsplash.com/nickkarvounis"></div>
+                        <div class="teacher_body text-center">
+                            <div class="teacher_title"><a href="#">@item.FullName</a></div>
+                            <div class="teacher_subtitle">@item.Position</div>
+                            <div class="teacher_social">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <div class="button teachers_button"><a href="#">see all teachers<div class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div></a></div>
+            </div>
+        </div>
+    </div>
+</div>
