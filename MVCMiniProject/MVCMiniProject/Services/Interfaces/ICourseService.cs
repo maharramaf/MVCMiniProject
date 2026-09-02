@@ -6,5 +6,6 @@ namespace MVCMiniProject.Services.Interfaces
     public interface ICourseService
     {
         Task<IEnumerable<CourseInfoUIVM>> GetAllUIAsync();
+        Task<CourseDetailVM> GetByIdAsync(int id);
     }
 }

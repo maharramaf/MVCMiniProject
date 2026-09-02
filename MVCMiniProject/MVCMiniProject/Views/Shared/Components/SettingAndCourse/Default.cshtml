@@ -1,0 +1,107 @@
+﻿
+@model SettingAndCourseVM
+
+
+<div class="courses">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="section_title text-center"><h2>@Model.Settings["Courses"]</h2></div>
+                <div class="section_subtitle">@Model.Settings["CoursesDesc"]</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="course_search">
+                    <form action="#" class="course_search_form d-flex flex-md-row flex-column align-items-start justify-content-between">
+                        <div><input type="text" class="course_input" placeholder="Course" required="required"></div>
+                        <div><input type="text" class="course_input" placeholder="Level" required="required"></div>
+                        <button class="course_button"><span>search course</span><span class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        @foreach (var item in Model.CourseInfos.OrderByDescending(m => m.SalesCount).Take(1))
+        {
+            <div class="row featured_row">
+                <div class="col-lg-6 featured_col">
+                    <div class="featured_content">
+                        <div class="featured_header d-flex flex-row align-items-center justify-content-start">
+                            @if (item.IsFeature)
+                            {
+                                <div class="course_tag"><a href="#">Featured</a></div>
+                            }
+                            else if (item.IsNew)
+                            {
+                                <div class="course_tag"><a href="#">New</a></div>
+                            }
+                            <div class="featured_price ml-auto">Price: <span>$@item.Price</span></div>
+                        </div>
+                        <div class="featured_title"><h3><a asp-controller="Detail" asp-action="Index" asp-route-id="@item.Id">@item.Title</a></h3></div>
+                        <div class="featured_text">@item.Description</div>
+                        <div class="featured_footer d-flex align-items-center justify-content-start">
+                            <div class="featured_author_image"><img src="images/@item.TeacherImage" alt=""></div>
+                            <div class="featured_author_name">By <a href="#">@item.TeacherName</a></div>
+                            <div class="featured_sales ml-auto"><span>@item.SalesCount</span> Sales</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 featured_col">
+                    <a asp-controller="Detail" asp-action="Index" asp-route-id="@item.Id" style="display: block; height: 100%;">
+                        <div class="featured_background" style="background-image:url(images/@item.MainImage); cursor: pointer;"></div>
+                    </a>
+                </div>
+            </div>
+        }
+        <div class="row courses_row">
+
+            @foreach (var item in Model.CourseInfos.OrderByDescending(m => m.SalesCount).Skip(1))
+            {
+                <div class="col-lg-4 col-md-6">
+                    <div class="course">
+                        <a asp-controller="Detail" asp-action="Index" asp-route-id="@item.Id">
+                            <div class="course_image"><img src="images/@item.MainImage" alt="" style="cursor: pointer;"></div>
+                        </a>
+                        <div class="course_body">
+                            <div class="course_header d-flex flex-row align-items-center justify-content-start">
+                                @if (item.IsFeature)
+                                {
+                                    <div class="course_tag"><a href="#">Featured</a></div>
+                                }
+                                else if (item.IsNew)
+                                {
+                                    <div class="course_tag"><a href="#">New</a></div>
+                                }
+                                <div class="course_price ml-auto">Price: <span>$@item.Price</span></div>
+                            </div>
+                            <div class="course_title"><h3><a asp-controller="Detail" asp-action="Index" asp-route-id="@item.Id">@item.Title</a></h3></div>
+                            <div class="course_text">@item.Description</div>
+                            <div class="course_footer d-flex align-items-center justify-content-start">
+                                <div class="course_author_image"><img src="images/@item.TeacherImage" alt="https://unsplash.com/anthonytran"></div>
+                                <div class="course_author_name">By <a href="#">@item.TeacherName</a></div>
+                                <div class="course_sales ml-auto"><span>@item.SalesCount</span> Sales</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="courses_paginations">
+                    <ul>
+                        <li class="active"><a href="#">01</a></li>
+                        <li><a href="#">02</a></li>
+                        <li><a href="#">03</a></li>
+                        <li><a href="#">04</a></li>
+                        <li><a href="#">05</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

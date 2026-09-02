@@ -31,8 +31,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/MEHERREM/OneDrive/Desktop/MVCMiniProject/MVCMiniProject/MVCMiniProject/Views/Detail/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWlsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/MEHERREM/OneDrive/Desktop/MVCMiniProject/MVCMiniProject/MVCMiniProject/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHERREM/OneDrive/Desktop/MVCMiniProject/MVCMiniProject/MVCMiniProject/Views/SearchCourse/NotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VhcmNoQ291cnNlXE5vdEZvdW5kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHERREM/OneDrive/Desktop/MVCMiniProject/MVCMiniProject/MVCMiniProject/Views/SearchCourse/SearchResults.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VhcmNoQ291cnNlXFNlYXJjaFJlc3VsdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/MEHERREM/OneDrive/Desktop/MVCMiniProject/MVCMiniProject/MVCMiniProject/Views/Shared/Components/CoursesAndSetting/Default.cshtml]
@@ -51,6 +63,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSGVhZGVyXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/MEHERREM/OneDrive/Desktop/MVCMiniProject/MVCMiniProject/MVCMiniProject/Views/Shared/Components/HomeUs/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSG9tZVVzXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/MEHERREM/OneDrive/Desktop/MVCMiniProject/MVCMiniProject/MVCMiniProject/Views/Shared/Components/Home/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSG9tZVxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -65,6 +81,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/MEHERREM/OneDrive/Desktop/MVCMiniProject/MVCMiniProject/MVCMiniProject/Views/Shared/Components/PlatformAndVision/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUGxhdGZvcm1BbmRWaXNpb25cRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MEHERREM/OneDrive/Desktop/MVCMiniProject/MVCMiniProject/MVCMiniProject/Views/Shared/Components/SettingAndCourse/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2V0dGluZ0FuZENvdXJzZVxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/MEHERREM/OneDrive/Desktop/MVCMiniProject/MVCMiniProject/MVCMiniProject/Views/Shared/Components/Slider/Default.cshtml]

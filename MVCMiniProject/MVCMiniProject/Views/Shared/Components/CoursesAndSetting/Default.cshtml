@@ -28,7 +28,7 @@
                                         }
                                         <div class="featured_price ml-auto">Price: <span>$@item.Price</span></div>
                                     </div>
-                                    <div class="featured_title"><h3><a href="courses.html">@item.Title</a></h3></div>
+                                    <div class="featured_title"><h3><a asp-controller="Detail" asp-action="Index" asp-route-id="@item.Id">@item.Title</a></h3></div>
                                     <div class="featured_text">@item.Description</div>
                                     <div class="featured_footer d-flex align-items-center justify-content-start">
                                         <div class="featured_author_image"><img src="~/images/@item.TeacherImage" alt=""></div>
@@ -38,8 +38,9 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 featured_col">
-
-                                <div class="featured_background" style="background-image:url(images/@item.MainImage)"></div>
+                                <a asp-controller="Detail" asp-action="Index" asp-route-id="@item.Id" style="display: block; height: 100%;">
+                                    <div class="featured_background" style="background-image:url(images/@item.MainImage); cursor: pointer;"></div>
+                                </a>
                             </div>
                         </div>
                     }
@@ -79,7 +80,9 @@
                         {
                             <div class="owl-item">
                                 <div class="course">
-                                    <div class="course_image"><img src="~/images/@item.MainImage" alt=""></div>
+                                    <a asp-controller="Detail" asp-action="Index" asp-route-id="@item.Id">
+                                        <div class="course_image"><img src="~/images/@item.MainImage" alt="" style="cursor: pointer;"></div>
+                                    </a>
                                     <div class="course_body">
                                         <div class="course_header d-flex flex-row align-items-center justify-content-start">
                                             @if (item.IsFeature)

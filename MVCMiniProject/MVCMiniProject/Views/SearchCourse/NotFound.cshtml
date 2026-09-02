@@ -1,0 +1,113 @@
+
+<link rel="stylesheet" type="text/css" href="~/styles/courses.css">
+<link rel="stylesheet" type="text/css" href="~/styles/courses_responsive.css">
+
+<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+    <div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
+    <div class="search">
+        <form action="#" class="header_search_form menu_mm">
+            <input type="search" class="search_input menu_mm" placeholder="Search" required="required">
+            <button class="header_search_button d-flex flex-column align-items-center justify-content-center menu_mm">
+                <i class="fa fa-search menu_mm" aria-hidden="true"></i>
+            </button>
+        </form>
+    </div>
+    <nav class="menu_nav">
+        <ul class="menu_mm">
+            <li class="menu_mm"><a asp-controller="Home" asp-action="Index">Home</a></li>
+            <li class="menu_mm"><a asp-controller="Course" asp-action="Index">Courses</a></li>
+            <li class="menu_mm"><a href="#">Instructors</a></li>
+            <li class="menu_mm"><a href="#">Events</a></li>
+            <li class="menu_mm"><a href="#">Blog</a></li>
+            <li class="menu_mm"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="menu_extra">
+        <div class="menu_phone"><span class="menu_title">phone:</span>(009) 35475 6688933 32</div>
+        <div class="menu_social">
+            <span class="menu_title">follow us</span>
+            <ul>
+                <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Not Found Section -->
+<div class="home">
+    <div class="breadcrumbs_container">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><a asp-controller="Home" asp-action="Index">Ana Səhifə</a></li>
+                            <li><a asp-controller="Course" asp-action="Index">Kurslar</a></li>
+                            <li>Axtarış Nəticəsi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="course" style="padding: 80px 0; min-height: 60vh;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="not_found_container" style="text-align: center; padding: 60px 40px; background: white; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                    
+                    <!-- Icon -->
+                    <div style="margin-bottom: 30px;">
+                        <i class="fa fa-search" style="font-size: 80px; color: #ffb606; opacity: 0.3;"></i>
+                    </div>
+
+                    <!-- Title -->
+                    <h2 style="font-size: 32px; font-weight: 700; color: #1a1a1a; margin-bottom: 20px;">
+                        Kurs Tapılmadı
+                    </h2>
+
+                    <!-- Message -->
+                    <p style="font-size: 18px; color: #666; margin-bottom: 15px; line-height: 1.6;">
+                        @ViewBag.Message
+                    </p>
+
+                    @if (!string.IsNullOrEmpty(ViewBag.SearchQuery))
+                    {
+                        <p style="font-size: 16px; color: #999; margin-bottom: 40px;">
+                            Axtarış sorğunuz: <strong style="color: #ffb606;">"@ViewBag.SearchQuery"</strong>
+                        </p>
+                    }
+
+                    <!-- Suggestions -->
+                    <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin-bottom: 30px; text-align: left;">
+                        <h4 style="font-size: 18px; font-weight: 600; color: #1a1a1a; margin-bottom: 15px;">
+                            <i class="fa fa-lightbulb-o" style="color: #ffb606; margin-right: 8px;"></i>
+                            Təkliflər:
+                        </h4>
+                        <ul style="list-style: none; padding: 0; margin: 0; color: #666; line-height: 2;">
+                            <li><i class="fa fa-check" style="color: #ffb606; margin-right: 10px;"></i>Kurs adını düzgün yazdığınızdan əmin olun</li>
+                            <li><i class="fa fa-check" style="color: #ffb606; margin-right: 10px;"></i>Daha ümumi sözlərdən istifadə edin</li>
+                            <li><i class="fa fa-check" style="color: #ffb606; margin-right: 10px;"></i>Bütün kursları görmək üçün aşağıdakı düyməyə klikləyin</li>
+                        </ul>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                        <a asp-controller="Course" asp-action="Index" style="display: inline-block; padding: 15px 40px; background: #ffb606; color: white; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 16px; transition: all 0.3s; box-shadow: 0 3px 15px rgba(255, 182, 6, 0.3);" onmouseover="this.style.background='#ff9100'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#ffb606'; this.style.transform='translateY(0)'">
+                            <i class="fa fa-list"></i> Bütün Kurslar
+                        </a>
+                        <a asp-controller="Home" asp-action="Index" style="display: inline-block; padding: 15px 40px; background: #6c757d; color: white; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 16px; transition: all 0.3s;" onmouseover="this.style.background='#5a6268'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#6c757d'; this.style.transform='translateY(0)'">
+                            <i class="fa fa-home"></i> Ana Səhifə
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
