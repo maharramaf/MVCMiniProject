@@ -22,11 +22,16 @@ builder.Services.AddScoped<ICourseService, CourseService>();
 builder.Services.AddScoped<IVisionAboutService, VisionAboutService>();
 builder.Services.AddScoped<IPlatformAboutService, PlatformAboutService>();
 builder.Services.AddScoped<ITeacherService, TeacherService>();
+builder.Services.AddScoped<IPositionService, PositionService>();
 
 
 var app = builder.Build();
 
 app.UseStaticFiles();
+
+app.MapControllerRoute(
+    name: "areas",
+    pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}");
 
 app.MapControllerRoute(
     name: "default",

@@ -1,3 +1,4 @@
+wwwroot\images\8386c463-470d-4dfc-a331-e78ba7076d5e.jpg
 wwwroot\images\about_1.jpg
 wwwroot\images\course_1.jpg
 wwwroot\images\course_2.jpg
@@ -10,7 +11,9 @@ wwwroot\images\course_8.jpg
 wwwroot\images\course_9.jpg
 wwwroot\images\course_author_2.jpg
 wwwroot\images\course_author_3.jpg
+wwwroot\images\ef845ffd-ed98-495c-bed2-718c47e120f6.jpg
 wwwroot\images\elearn.jpg
+wwwroot\images\fd7b8c95-1ee3-44bc-b8c3-342a8d789208.jpg
 wwwroot\images\featured.jpg
 wwwroot\images\featured_author.jpg
 wwwroot\images\home_logo.png
@@ -75,3 +78,4 @@ wwwroot\styles\main_styles.css
 wwwroot\styles\news.css
 wwwroot\styles\news_responsive.css
 wwwroot\styles\responsive.css
+wwwroot\images\cd32436f-7300-4e6b-83a6-f76b555e2b18.jpg
