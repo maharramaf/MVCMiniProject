@@ -1,0 +1,90 @@
+@using MVCMiniProject.Admin
+@model AdminFormVM
+@{
+    ViewData["Title"] = Model.IsEdit ? $"Edit {Model.Entity.SingularName}" : $"Create {Model.Entity.SingularName}";
+    var action = Model.IsEdit ? $"/admin/{Model.Entity.Slug}/{Model.Id}/edit" : $"/admin/{Model.Entity.Slug}/create";
+}
+
+<div class="card shadow-sm">
+    <div class="card-body">
+        <form action="@action" method="post" enctype="multipart/form-data">
+            @Html.AntiForgeryToken()
+            @foreach (var field in Model.Entity.Fields.Where(f => f.ShowInForm))
+            {
+                var value = Model.Values.TryGetValue(field.Name, out var raw) ? raw : string.Empty;
+                <div class="mb-3">
+                    <label class="form-label">
+                        @field.Label
+                        @if (field.Required && !(Model.IsEdit && (field.Kind == AdminFieldKind.Image || field.Kind == AdminFieldKind.Password)))
+                        {
+                            <span class="text-danger">*</span>
+                        }
+                    </label>
+
+                    @if (field.Kind == AdminFieldKind.TextArea)
+                    {
+                        <textarea name="@field.Name" class="form-control" rows="5">@value</textarea>
+                    }
+                    else if (field.Kind == AdminFieldKind.Number)
+                    {
+                        <input type="number" name="@field.Name" value="@value" class="form-control" />
+                    }
+                    else if (field.Kind == AdminFieldKind.Boolean)
+                    {
+                        <input type="hidden" name="@field.Name" value="false" />
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" name="@field.Name" value="true"
+                                   @(value == "True" || value == "true" ? "checked" : null) />
+                        </div>
+                    }
+                    else if (field.Kind == AdminFieldKind.Relation)
+                    {
+                        <select name="@field.Name" class="form-select">
+                            <option value="0">Select @field.Label</option>
+                            @if (Model.Lookups.TryGetValue(field.Name, out var options))
+                            {
+                                foreach (var option in options)
+                                {
+                                    if (value == option.Value)
+                                    {
+                                        <option value="@option.Value" selected>@option.Text</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@option.Value">@option.Text</option>
+                                    }
+                                }
+                            }
+                        </select>
+                    }
+                    else if (field.Kind == AdminFieldKind.Password)
+                    {
+                        <input type="password" name="@field.Name" class="form-control" autocomplete="new-password" />
+                        @if (Model.IsEdit)
+                        {
+                            <div class="form-text">Leave blank to keep the current password.</div>
+                        }
+                    }
+                    else if (field.Kind == AdminFieldKind.Image)
+                    {
+                        @if (!string.IsNullOrWhiteSpace(value))
+                        {
+                            <div class="mb-2">
+                                <img src="~/images/@value" alt="" style="width:180px;height:110px;object-fit:cover;border-radius:8px;">
+                                <input type="hidden" name="Existing_@field.Name" value="@value" />
+                            </div>
+                        }
+                        <input type="file" name="@field.Name" class="form-control" accept="image/*" />
+                    }
+                    else
+                    {
+                        <input type="text" name="@field.Name" value="@value" class="form-control" />
+                    }
+                </div>
+            }
+
+            <button type="submit" class="btn btn-success">@(Model.IsEdit ? "Save changes" : "Create")</button>
+            <a class="btn btn-secondary" href="/admin/@Model.Entity.Slug">Cancel</a>
+        </form>
+    </div>
+</div>

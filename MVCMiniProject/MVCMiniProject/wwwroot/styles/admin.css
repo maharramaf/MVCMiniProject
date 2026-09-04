@@ -1,0 +1,177 @@
+:root {
+    --admin-bg: #0f1221;
+    --admin-sidebar: #171b2e;
+    --admin-accent: #ff6600;
+    --admin-text: #e8e9f2;
+    --admin-muted: #9aa0b5;
+}
+
+.admin-body {
+    margin: 0;
+    background: #f4f5fb;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.admin-shell {
+    min-height: 100vh;
+    display: flex;
+}
+
+.admin-sidebar {
+    width: 250px;
+    background: var(--admin-sidebar);
+    color: var(--admin-text);
+    flex-direction: column;
+    padding: 24px 16px;
+    overflow-y: auto;
+    max-height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.admin-brand {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.admin-brand-mark {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--admin-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.admin-brand small {
+    display: block;
+    color: var(--admin-muted);
+}
+
+.admin-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.admin-nav-link {
+    color: var(--admin-text);
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 8px;
+}
+
+.admin-nav-link:hover,
+.admin-nav-link.active {
+    background: rgba(255, 102, 0, 0.18);
+    color: #fff;
+}
+
+.admin-main {
+    flex: 1;
+    padding: 28px;
+}
+
+.admin-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 16px;
+}
+
+.admin-page-title {
+    font-size: 28px;
+    margin: 0;
+    color: #2c2b31;
+}
+
+.admin-page-subtitle {
+    color: #6c6a74;
+}
+
+.admin-topbar-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--admin-bg);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 999px;
+}
+
+.admin-stat {
+    border: 0;
+    border-radius: 16px;
+    color: #fff;
+    min-height: 140px;
+}
+
+.admin-offcanvas {
+    background: var(--admin-sidebar);
+}
+
+.admin-mobile-toggle {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 20;
+    border: 0;
+    background: var(--admin-bg);
+    color: #fff;
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+}
+
+.admin-loading {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 18, 33, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+}
+
+.admin-loading.is-hidden {
+    display: none;
+}
+
+.admin-table img {
+    width: 72px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.admin-auth {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(160deg, #171b2e, #2c2b31);
+}
+
+.admin-auth-card {
+    width: 100%;
+    max-width: 420px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+@media (max-width: 767px) {
+    .admin-main {
+        padding: 72px 16px 24px;
+    }
+
+    .admin-topbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

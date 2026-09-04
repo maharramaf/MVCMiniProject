@@ -18,8 +18,25 @@
                             </ul>
                             <div class="top_bar_login ml-auto">
                                 <ul>
-                                    <li><a href="~/#">Register</a></li>
-                                    <li><a href="~/#">Login</a></li>
+                                    @if (User.Identity?.IsAuthenticated == true)
+                                    {
+                                        @if (User.IsInRole("admin") || User.IsInRole("superadmin"))
+                                        {
+                                            <li><a asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Admin</a></li>
+                                        }
+                                        <li><a asp-controller="Account" asp-action="Profile">@User.Identity.Name</a></li>
+                                        <li>
+                                            <form asp-controller="Account" asp-action="Logout" asp-area="" method="post" style="display:inline;">
+                                                @Html.AntiForgeryToken()
+                                                <button type="submit" class="top_bar_logout">Logout</button>
+                                            </form>
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li><a asp-controller="Account" asp-action="Register">Register</a></li>
+                                        <li><a asp-controller="Account" asp-action="Login">Login</a></li>
+                                    }
                                 </ul>
                             </div>
                         </div>
@@ -67,8 +84,9 @@
             <div class="row">
                 <div class="col">
                     <div class="header_search_content d-flex flex-row align-items-center justify-content-end">
-                        <form asp-controller="SearchCourse" asp-action="Search" method="get" class="header_search_form">
-                            <input type="search" name="searchQuery" class="search_input" placeholder="Kurs axtar..." required="required">
+                        <form asp-controller="Course" asp-action="Search" method="get" class="header_search_form js-course-search" autocomplete="off">
+                            <input type="search" name="q" class="search_input" placeholder="Search..." autocomplete="off">
+                            <div class="course_search_dropdown" hidden></div>
                             <button type="submit" class="header_search_button d-flex flex-column align-items-center justify-content-center">
                                 <i class="fa fa-search" aria-hidden="true"></i>
                             </button>

@@ -1,0 +1,36 @@
+@{
+    ViewData["Title"] = "My account";
+}
+
+<div class="home">
+    <div class="home_background parallax_background parallax-window" data-parallax="scroll" data-image-src="@Url.Content("~/images/courses.jpg")" data-speed="0.8"></div>
+    <div class="home_container">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="home_content text-center">
+                        <div class="home_title">My account</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="auth_section">
+    <div class="container">
+        <div class="auth_card">
+            <h2>Welcome, @User.Identity?.Name</h2>
+            <p>Email: @User.FindFirst(System.Security.Claims.ClaimTypes.Email)?.Value</p>
+            <p>Role: @User.FindFirst(System.Security.Claims.ClaimTypes.Role)?.Value</p>
+            @if (User.IsInRole("admin") || User.IsInRole("superadmin"))
+            {
+                <p><a asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Open admin panel</a></p>
+            }
+            <form asp-action="Logout" method="post">
+                @Html.AntiForgeryToken()
+                <button type="submit" class="auth_button">Logout</button>
+            </form>
+        </div>
+    </div>
+</div>

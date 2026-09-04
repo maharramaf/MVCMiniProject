@@ -21,8 +21,19 @@ namespace MVCMiniProject.Data
         public DbSet<Teacher> Teachers { get; set; }
         public DbSet<PlatformAbout> PlatformAbouts { get; set; }
         public DbSet<VisionAbout> VisionAbouts { get; set; }
+        public DbSet<AppUser> AppUsers { get; set; }
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
-         
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<AppUser>(entity =>
+            {
+                entity.Property(u => u.Email).HasMaxLength(256);
+                entity.Property(u => u.Username).HasMaxLength(256);
+                entity.HasIndex(u => u.Email).IsUnique();
+            });
+        }
     }
 }

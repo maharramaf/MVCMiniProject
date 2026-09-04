@@ -10,6 +10,7 @@ namespace MVCMiniProject.ViewModels.Courses
         public bool IsFeature { get; set; }
         public bool IsNew { get; set; }
         public string TeacherName { get; set; }
+        public string TeacherPosition { get; set; }
         public string MainImage { get; set; }
         public string TeacherImage { get; set; }
         public List<string> CourseImages { get; set; }

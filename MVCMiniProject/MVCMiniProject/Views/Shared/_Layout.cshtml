@@ -20,6 +20,9 @@
     <link rel="stylesheet" type="text/css" href="~/styles/courses_responsive.css">
     <link rel="stylesheet" type="text/css" href="~/styles/about.css">
     <link rel="stylesheet" type="text/css" href="~/styles/about_responsive.css">
+    <link rel="stylesheet" type="text/css" href="~/styles/auth.css">
+    <link rel="stylesheet" type="text/css" href="~/styles/course-search.css">
+    <link rel="stylesheet" type="text/css" href="~/styles/password-toggle.css">
     <script nonce="b126faec-4214-4670-b276-5164d84872a7">(function(w, d) { !function(bv, bw, bx, by) { bv[bx] = bv[bx] || {}; bv[bx].executed = []; bv.zaraz = { deferred: [], listeners: [] }; bv.zaraz.q = []; bv.zaraz._f = function(bz) { return function() { var bA = Array.prototype.slice.call(arguments); bv.zaraz.q.push({ m: bz, a: bA }) } }; for (const bB of ["track", "set", "debug"]) bv.zaraz[bB] = bv.zaraz._f(bB); bv.zaraz.init = () => { var bC = bw.getElementsByTagName(by)[0], bD = bw.createElement(by), bE = bw.getElementsByTagName("title")[0]; bE && (bv[bx].t = bw.getElementsByTagName("title")[0].text); bv[bx].x = Math.random(); bv[bx].w = bv.screen.width; bv[bx].h = bv.screen.height; bv[bx].j = bv.innerHeight; bv[bx].e = bv.innerWidth; bv[bx].l = bv.location.href; bv[bx].r = bw.referrer; bv[bx].k = bv.screen.colorDepth; bv[bx].n = bw.characterSet; bv[bx].o = (new Date).getTimezoneOffset(); if (bv.dataLayer) for (const bI of Object.entries(Object.entries(dataLayer).reduce(((bJ, bK) => ({ ...bJ[1], ...bK[1] }))))) zaraz.set(bI[0], bI[1], { scope: "page" }); bv[bx].q = []; for (; bv.zaraz.q.length;) { const bL = bv.zaraz.q.shift(); bv[bx].q.push(bL) } bD.defer = !0; for (const bM of [localStorage, sessionStorage]) Object.keys(bM || {}).filter((bO => bO.startsWith("_zaraz_"))).forEach((bN => { try { bv[bx]["z_" + bN.slice(7)] = JSON.parse(bM.getItem(bN)) } catch { bv[bx]["z_" + bN.slice(7)] = bM.getItem(bN) } })); bD.referrerPolicy = "origin"; bD.src = "../../cdn-cgi/zaraz/sd0d9.js?z=" + btoa(encodeURIComponent(JSON.stringify(bv[bx]))); bC.parentNode.insertBefore(bD, bC) };["complete", "interactive"].includes(bw.readyState) ? zaraz.init() : bv.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);</script>
 </head>
 <body>
@@ -52,7 +55,40 @@
 
         gtag('config', 'UA-23581568-13');
     </script>
-    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v2b4487d741ca48dcbadcaf954e159fc61680799950996" integrity="sha512-D/jdE0CypeVxFadTejKGTzmwyV10c1pxZk/AqjJuZbaJwGMyNHY3q/mTPWqMUnFACfCTunhZUVcd4cV78dK1pQ==" data-cf-beacon='{"rayId":"7b60c373eb408ecc","version":"2023.3.0","b":1,"token":"cd0b4b3a733644fc843ef0b185f98241","si":100}' crossorigin="anonymous"></script>
+        <div id="course_page_loading" class="course_page_loading is-hidden">
+            <div class="course_page_loading_inner">Loading...</div>
+        </div>
+        <script>
+            (function () {
+                var loading = document.getElementById('course_page_loading');
+                if (!loading) {
+                    return;
+                }
+                document.addEventListener('click', function (event) {
+                    var link = event.target.closest('.course_detail_link');
+                    if (link && !event.ctrlKey && !event.metaKey && !event.shiftKey) {
+                        loading.classList.remove('is-hidden');
+                    }
+                });
+                window.addEventListener('pageshow', function () {
+                    loading.classList.add('is-hidden');
+                });
+            })();
+        </script>
+        <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v2b4487d741ca48dcbadcaf954e159fc61680799950996" integrity="sha512-D/jdE0CypeVxFadTejKGTzmwyV10c1pxZk/AqjJuZbaJwGMyNHY3q/mTPWqMUnFACfCTunhZUVcd4cV78dK1pQ==" data-cf-beacon='{"rayId":"7b60c373eb408ecc","version":"2023.3.0","b":1,"token":"cd0b4b3a733644fc843ef0b185f98241","si":100}' crossorigin="anonymous"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    <script>
+        document.querySelectorAll("form.js-auth-form").forEach(function (form) {
+            form.addEventListener("submit", function () {
+                var button = form.querySelector("button[type='submit']");
+                if (button) {
+                    button.disabled = true;
+                }
+            });
+        });
+    </script>
+    <script src="~/js/course-search.js"></script>
+    <script src="~/js/password-toggle.js"></script>
 </body>
 
 <!-- Mirrored from preview.colorlib.com/theme/elearn/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 11 Apr 2023 05:17:44 GMT -->

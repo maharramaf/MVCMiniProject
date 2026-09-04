@@ -1,0 +1,52 @@
+<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+    <div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
+    <nav class="menu_nav">
+        <ul class="menu_mm">
+            <li class="menu_mm"><a asp-controller="Home" asp-action="Index">Home</a></li>
+            <li class="menu_mm"><a asp-controller="Course" asp-action="Index">Courses</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="home">
+    <div class="home_background parallax_background parallax-window" data-parallax="scroll" data-image-src="@Url.Content("~/images/courses.jpg")" data-speed="0.8"></div>
+    <div class="home_container">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="home_content text-center">
+                        <div class="home_title">Something went wrong</div>
+                        <div class="breadcrumbs">
+                            <ul>
+                                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                                <li><a asp-controller="Course" asp-action="Index">Courses</a></li>
+                                <li>Error</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="courses">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="section_title text-center"><h2>Course details could not be loaded</h2></div>
+                <div class="section_subtitle">An error occurred while loading this course. Please try again later.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <div class="button teachers_button">
+                    <a asp-controller="Course" asp-action="Index">
+                        back to courses
+                        <div class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

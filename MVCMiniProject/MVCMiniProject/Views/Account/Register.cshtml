@@ -1,0 +1,56 @@
+@model RegisterVM
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="home">
+    <div class="home_background parallax_background parallax-window" data-parallax="scroll" data-image-src="@Url.Content("~/images/courses.jpg")" data-speed="0.8"></div>
+    <div class="home_container">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="home_content text-center">
+                        <div class="home_title">Register</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="auth_section">
+    <div class="container">
+        <div class="auth_card">
+            <h2>Create account</h2>
+            <form asp-action="Register" method="post" class="js-auth-form">
+                @Html.AntiForgeryToken()
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                <label asp-for="FirstName"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+
+                <label asp-for="LastName"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+
+                <label asp-for="Email"></label>
+                <input asp-for="Email" class="form-control" autocomplete="email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+
+                <label asp-for="Password"></label>
+                <input asp-for="Password" class="form-control" autocomplete="new-password" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+
+                <label asp-for="ConfirmPassword"></label>
+                <input asp-for="ConfirmPassword" class="form-control" autocomplete="new-password" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+
+                <button type="submit" class="auth_button">Register</button>
+            </form>
+            <div class="auth_links">
+                Already have an account? <a asp-action="Login">Login</a>
+            </div>
+        </div>
+    </div>
+</div>

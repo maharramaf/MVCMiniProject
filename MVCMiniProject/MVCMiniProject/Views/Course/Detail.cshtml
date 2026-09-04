@@ -1,0 +1,143 @@
+@model CourseDetailVM
+
+<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+    <div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
+    <div class="search">
+        <form action="#" class="header_search_form menu_mm">
+            <input type="search" class="search_input menu_mm" placeholder="Search" required="required">
+            <button class="header_search_button d-flex flex-column align-items-center justify-content-center menu_mm">
+                <i class="fa fa-search menu_mm" aria-hidden="true"></i>
+            </button>
+        </form>
+    </div>
+    <nav class="menu_nav">
+        <ul class="menu_mm">
+            <li class="menu_mm"><a asp-controller="Home" asp-action="Index">Home</a></li>
+            <li class="menu_mm"><a asp-controller="Course" asp-action="Index">Courses</a></li>
+            <li class="menu_mm"><a asp-controller="About" asp-action="Index">About</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="home">
+    <div class="home_background parallax_background parallax-window" data-parallax="scroll" data-image-src="@Url.Content("~/images/courses.jpg")" data-speed="0.8"></div>
+    <div class="home_container">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="home_content text-center">
+                        <div class="home_title">@(string.IsNullOrWhiteSpace(Model.Title) ? "Course" : Model.Title)</div>
+                        <div class="breadcrumbs">
+                            <ul>
+                                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                                <li><a asp-controller="Course" asp-action="Index">Courses</a></li>
+                                <li>@(string.IsNullOrWhiteSpace(Model.Title) ? "Detail" : Model.Title)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="courses">
+    <div class="container">
+        <div class="row featured_row">
+            <div class="col-lg-6 featured_col">
+                @if (!string.IsNullOrWhiteSpace(Model.MainImage))
+                {
+                    <div class="course_image">
+                        <img src="~/images/@Model.MainImage" alt="@Model.Title">
+                    </div>
+                }
+                else
+                {
+                    <div class="featured_content">
+                        <div class="featured_text">No course image available.</div>
+                    </div>
+                }
+            </div>
+            <div class="col-lg-6 featured_col">
+                <div class="featured_content">
+                    <div class="featured_header d-flex flex-row align-items-center justify-content-start">
+                        @if (Model.IsFeature)
+                        {
+                            <div class="course_tag"><a>Featured</a></div>
+                        }
+                        @if (Model.IsNew)
+                        {
+                            <div class="course_tag"><a>New</a></div>
+                        }
+                        <div class="featured_price ml-auto">Price: <span>$@Model.Price</span></div>
+                    </div>
+                    <div class="featured_title">
+                        <h3><span>@(string.IsNullOrWhiteSpace(Model.Title) ? "Untitled course" : Model.Title)</span></h3>
+                    </div>
+                    <div class="featured_text">
+                        @if (!string.IsNullOrWhiteSpace(Model.Description))
+                        {
+                            @Model.Description
+                        }
+                        else
+                        {
+                            <span>No description available.</span>
+                        }
+                    </div>
+                    <div class="featured_footer d-flex align-items-center justify-content-start">
+                        @if (!string.IsNullOrWhiteSpace(Model.TeacherImage))
+                        {
+                            <div class="featured_author_image"><img src="~/images/@Model.TeacherImage" alt="@Model.TeacherName"></div>
+                        }
+                        <div class="featured_author_name">
+                            @if (!string.IsNullOrWhiteSpace(Model.TeacherName))
+                            {
+                                <span>By @Model.TeacherName</span>
+                                @if (!string.IsNullOrWhiteSpace(Model.TeacherPosition))
+                                {
+                                    <span> — @Model.TeacherPosition</span>
+                                }
+                            }
+                            else
+                            {
+                                <span>Instructor information is not available.</span>
+                            }
+                        </div>
+                        <div class="featured_sales ml-auto"><span>@Model.SalesCount</span> Sales</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @{
+            var extraImages = Model.CourseImages?
+                .Where(name => !string.Equals(name, Model.MainImage, StringComparison.OrdinalIgnoreCase))
+                .ToList() ?? new List<string>();
+        }
+
+        @if (extraImages.Any())
+        {
+            <div class="row courses_row">
+                @foreach (var image in extraImages)
+                {
+                    <div class="col-lg-4 col-md-6">
+                        <div class="course">
+                            <div class="course_image"><img src="~/images/@image" alt="@Model.Title"></div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+
+        <div class="row courses_row">
+            <div class="col text-center">
+                <div class="button teachers_button">
+                    <a asp-controller="Course" asp-action="Index">
+                        back to courses
+                        <div class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,66 @@
+@model LoginVM
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="home">
+    <div class="home_background parallax_background parallax-window" data-parallax="scroll" data-image-src="@Url.Content("~/images/courses.jpg")" data-speed="0.8"></div>
+    <div class="home_container">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="home_content text-center">
+                        <div class="home_title">Login</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="auth_section">
+    <div class="container">
+        <div class="auth_card">
+            <h2>Sign in</h2>
+            <p>Use your email and password to continue.</p>
+
+            @if (TempData["AuthMessage"] != null)
+            {
+                <div class="auth_alert">@TempData["AuthMessage"]</div>
+            }
+            @if (TempData["AuthError"] != null)
+            {
+                <div class="auth_alert error">@TempData["AuthError"]</div>
+            }
+
+            <form asp-action="Login" method="post" class="js-auth-form">
+                @Html.AntiForgeryToken()
+                <input type="hidden" asp-for="ReturnUrl" />
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                <label asp-for="Email"></label>
+                <input asp-for="Email" class="form-control" autocomplete="email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+
+                <label asp-for="Password"></label>
+                <input asp-for="Password" class="form-control" autocomplete="current-password" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+
+                <button type="submit" class="auth_button">Login</button>
+            </form>
+
+            @if (Model.NeedsVerification)
+            {
+                <form asp-action="ResendVerification" method="post" class="js-auth-form" style="margin-top:18px;">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="Email" value="@Model.Email" />
+                    <button type="submit" class="auth_button">Doğrulama emailini tekrar gönder</button>
+                </form>
+            }
+
+            <div class="auth_links">
+                <a asp-action="Register">Create an account</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MVCMiniProject.Services.Interfaces;
 using MVCMiniProject.ViewModels;
 
 namespace MVCMiniProject.Controllers
@@ -7,11 +6,9 @@ namespace MVCMiniProject.Controllers
     public class HomeController : Controller
     {
 
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-
-
-            return View();
+            return View(new HomeVM());
         }
     }
 }

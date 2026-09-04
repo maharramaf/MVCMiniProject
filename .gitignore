@@ -1,0 +1,10 @@
+.env
+.env.local
+appsettings.*.local.json
+bin/
+obj/
+.vs/
+*.user
+*.suo
+MVCMiniProject/MVCMiniProject/bin/
+MVCMiniProject/MVCMiniProject/obj/

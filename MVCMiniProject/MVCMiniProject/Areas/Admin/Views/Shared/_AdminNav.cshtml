@@ -1,0 +1,31 @@
+@using MVCMiniProject.Admin
+<div class="admin-brand">
+    <span class="admin-brand-mark">E</span>
+    <div>
+        <strong>Elearn</strong>
+        <small>Admin Panel</small>
+    </div>
+</div>
+<nav class="admin-nav">
+    <a class="admin-nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Dashboard" ? "active" : "")"
+       asp-area="Admin" asp-controller="Dashboard" asp-action="Index">
+        <i class="fa-solid fa-gauge-high"></i> Dashboard
+    </a>
+    @foreach (var entity in AdminCatalog.Entities)
+    {
+        var current = ViewContext.RouteData.Values["entity"]?.ToString();
+        <a class="admin-nav-link @(string.Equals(current, entity.Slug, StringComparison.OrdinalIgnoreCase) ? "active" : "")"
+           href="/admin/@entity.Slug">
+            <i class="@entity.Icon"></i> @entity.PluralName
+        </a>
+    }
+    <a class="admin-nav-link" href="/">
+        <i class="fa-solid fa-globe"></i> View site
+    </a>
+    <form asp-area="" asp-controller="Account" asp-action="Logout" method="post" class="px-3 pb-3">
+        @Html.AntiForgeryToken()
+        <button type="submit" class="admin-nav-link w-100 text-start border-0 bg-transparent">
+            <i class="fa-solid fa-right-from-bracket"></i> Logout
+        </button>
+    </form>
+</nav>
