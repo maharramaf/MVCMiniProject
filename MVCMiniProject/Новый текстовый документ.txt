@@ -1,0 +1,7 @@
+SuperAdmin
+email : superadmin@local
+shifre : SuperAdmin123!
+
+Admin 
+email : admin@local
+shifre :Admin123!

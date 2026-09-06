@@ -3,12 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|c:\\users\\meherrem\\onedrive\\desktop\\mvcminiproject\\mvcminiproject\\mvcminiproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|solutionrelative:mvcminiproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|c:\\users\\meherrem\\onedrive\\desktop\\mvcminiproject\\mvcminiproject\\mvcminiproject\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|solutionrelative:mvcminiproject\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|c:\\users\\meherrem\\onedrive\\desktop\\mvcminiproject\\mvcminiproject\\mvcminiproject\\helpers\\verificationtokenhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|solutionrelative:mvcminiproject\\helpers\\verificationtokenhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|c:\\users\\meherrem\\onedrive\\desktop\\mvcminiproject\\mvcminiproject\\mvcminiproject\\helpers\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|solutionrelative:mvcminiproject\\helpers\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|c:\\users\\meherrem\\onedrive\\desktop\\mvcminiproject\\mvcminiproject\\mvcminiproject\\helpers\\imagefilehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|solutionrelative:mvcminiproject\\helpers\\imagefilehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|c:\\users\\meherrem\\onedrive\\desktop\\mvcminiproject\\mvcminiproject\\mvcminiproject\\helpers\\emailtemplates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|solutionrelative:mvcminiproject\\helpers\\emailtemplates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|c:\\users\\meherrem\\onedrive\\desktop\\mvcminiproject\\mvcminiproject\\mvcminiproject\\helpers\\approles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|solutionrelative:mvcminiproject\\helpers\\approles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|c:\\users\\meherrem\\onedrive\\desktop\\mvcminiproject\\mvcminiproject\\mvcminiproject\\areas\\admin\\controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|solutionrelative:mvcminiproject\\areas\\admin\\controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|c:\\users\\meherrem\\onedrive\\desktop\\mvcminiproject\\mvcminiproject\\mvcminiproject\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|solutionrelative:mvcminiproject\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|c:\\users\\meherrem\\onedrive\\desktop\\mvcminiproject\\mvcminiproject\\mvcminiproject\\admin\\admincatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|solutionrelative:mvcminiproject\\admin\\admincatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|c:\\users\\meherrem\\onedrive\\desktop\\mvcminiproject\\mvcminiproject\\mvcminiproject\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|solutionrelative:mvcminiproject\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|c:\\users\\meherrem\\onedrive\\desktop\\mvcminiproject\\mvcminiproject\\mvcminiproject\\services\\interfaces\\iplatformaboutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,10 +67,6 @@
       "RelativeMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|solutionrelative:mvcminiproject\\views\\shared\\components\\join\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|c:\\users\\meherrem\\onedrive\\desktop\\mvcminiproject\\mvcminiproject\\mvcminiproject\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|solutionrelative:mvcminiproject\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|c:\\users\\meherrem\\onedrive\\desktop\\mvcminiproject\\mvcminiproject\\mvcminiproject\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3102FD80-F40E-1AA9-E0E7-19AAF943D98D}|MVCMiniProject\\MVCMiniProject.csproj|solutionrelative:mvcminiproject\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -46,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,46 +90,104 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ManageController.cs",
-              "DocumentMoniker": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Areas\\Admin\\Controllers\\ManageController.cs",
-              "RelativeDocumentMoniker": "MVCMiniProject\\Areas\\Admin\\Controllers\\ManageController.cs",
-              "ToolTip": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Areas\\Admin\\Controllers\\ManageController.cs",
-              "RelativeToolTip": "MVCMiniProject\\Areas\\Admin\\Controllers\\ManageController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwCAAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-04T10:25:38.346Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DashboardController.cs",
-              "DocumentMoniker": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Areas\\Admin\\Controllers\\DashboardController.cs",
-              "RelativeDocumentMoniker": "MVCMiniProject\\Areas\\Admin\\Controllers\\DashboardController.cs",
-              "ToolTip": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Areas\\Admin\\Controllers\\DashboardController.cs",
-              "RelativeToolTip": "MVCMiniProject\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "Title": ".env",
+              "DocumentMoniker": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\.env",
+              "RelativeDocumentMoniker": "MVCMiniProject\\.env",
+              "ToolTip": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\.env",
+              "RelativeToolTip": "MVCMiniProject\\.env",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-04T10:25:33.82Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-09-06T10:17:19.607Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IPlatformAboutService.cs",
-              "DocumentMoniker": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Services\\Interfaces\\IPlatformAboutService.cs",
-              "RelativeDocumentMoniker": "MVCMiniProject\\Services\\Interfaces\\IPlatformAboutService.cs",
-              "ToolTip": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Services\\Interfaces\\IPlatformAboutService.cs",
-              "RelativeToolTip": "MVCMiniProject\\Services\\Interfaces\\IPlatformAboutService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAIAAAAAAAAAA==",
+              "Title": "VerificationTokenHelper.cs",
+              "DocumentMoniker": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Helpers\\VerificationTokenHelper.cs",
+              "RelativeDocumentMoniker": "MVCMiniProject\\Helpers\\VerificationTokenHelper.cs",
+              "ToolTip": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Helpers\\VerificationTokenHelper.cs",
+              "RelativeToolTip": "MVCMiniProject\\Helpers\\VerificationTokenHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-03T15:11:25.712Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-06T10:17:13.685Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "PasswordHelper.cs",
+              "DocumentMoniker": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Helpers\\PasswordHelper.cs",
+              "RelativeDocumentMoniker": "MVCMiniProject\\Helpers\\PasswordHelper.cs",
+              "ToolTip": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Helpers\\PasswordHelper.cs",
+              "RelativeToolTip": "MVCMiniProject\\Helpers\\PasswordHelper.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-06T10:17:10.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ImageFileHelper.cs",
+              "DocumentMoniker": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Helpers\\ImageFileHelper.cs",
+              "RelativeDocumentMoniker": "MVCMiniProject\\Helpers\\ImageFileHelper.cs",
+              "ToolTip": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Helpers\\ImageFileHelper.cs",
+              "RelativeToolTip": "MVCMiniProject\\Helpers\\ImageFileHelper.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-06T10:17:05.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmailTemplates.cs",
+              "DocumentMoniker": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Helpers\\EmailTemplates.cs",
+              "RelativeDocumentMoniker": "MVCMiniProject\\Helpers\\EmailTemplates.cs",
+              "ToolTip": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Helpers\\EmailTemplates.cs",
+              "RelativeToolTip": "MVCMiniProject\\Helpers\\EmailTemplates.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-06T10:16:56.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppRoles.cs",
+              "DocumentMoniker": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Helpers\\AppRoles.cs",
+              "RelativeDocumentMoniker": "MVCMiniProject\\Helpers\\AppRoles.cs",
+              "ToolTip": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Helpers\\AppRoles.cs",
+              "RelativeToolTip": "MVCMiniProject\\Helpers\\AppRoles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-06T10:16:54.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AdminCatalog.cs",
+              "DocumentMoniker": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Admin\\AdminCatalog.cs",
+              "RelativeDocumentMoniker": "MVCMiniProject\\Admin\\AdminCatalog.cs",
+              "ToolTip": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Admin\\AdminCatalog.cs",
+              "RelativeToolTip": "MVCMiniProject\\Admin\\AdminCatalog.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-06T10:16:04.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Program.cs",
+              "RelativeDocumentMoniker": "MVCMiniProject\\Program.cs",
+              "ToolTip": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Program.cs",
+              "RelativeToolTip": "MVCMiniProject\\Program.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAE0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T10:33:23.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "PositionService.cs",
               "DocumentMoniker": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Services\\PositionService.cs",
               "RelativeDocumentMoniker": "MVCMiniProject\\Services\\PositionService.cs",
@@ -109,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "VisionUIVM.cs",
               "DocumentMoniker": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\ViewModels\\Visions\\VisionUIVM.cs",
               "RelativeDocumentMoniker": "MVCMiniProject\\ViewModels\\Visions\\VisionUIVM.cs",
@@ -121,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "MVCMiniProject\\Views\\Home\\Index.cshtml",
@@ -133,7 +223,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "MVCMiniProject\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "MVCMiniProject\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T10:25:33.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ManageController.cs",
+              "DocumentMoniker": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Areas\\Admin\\Controllers\\ManageController.cs",
+              "RelativeDocumentMoniker": "MVCMiniProject\\Areas\\Admin\\Controllers\\ManageController.cs",
+              "ToolTip": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Areas\\Admin\\Controllers\\ManageController.cs",
+              "RelativeToolTip": "MVCMiniProject\\Areas\\Admin\\Controllers\\ManageController.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAwwCAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T10:25:38.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IPlatformAboutService.cs",
+              "DocumentMoniker": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Services\\Interfaces\\IPlatformAboutService.cs",
+              "RelativeDocumentMoniker": "MVCMiniProject\\Services\\Interfaces\\IPlatformAboutService.cs",
+              "ToolTip": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Services\\Interfaces\\IPlatformAboutService.cs",
+              "RelativeToolTip": "MVCMiniProject\\Services\\Interfaces\\IPlatformAboutService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T15:11:25.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "Default.cshtml",
               "DocumentMoniker": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Views\\Shared\\Components\\Join\\Default.cshtml",
               "RelativeDocumentMoniker": "MVCMiniProject\\Views\\Shared\\Components\\Join\\Default.cshtml",
@@ -145,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\appsettings.Development.json",
               "RelativeDocumentMoniker": "MVCMiniProject\\appsettings.Development.json",
@@ -157,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "CourseService.cs",
               "DocumentMoniker": "C:\\Users\\MEHERREM\\OneDrive\\Desktop\\MVCMiniProject\\MVCMiniProject\\MVCMiniProject\\Services\\CourseService.cs",
               "RelativeDocumentMoniker": "MVCMiniProject\\Services\\CourseService.cs",
